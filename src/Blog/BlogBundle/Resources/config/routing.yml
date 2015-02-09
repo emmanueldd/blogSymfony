@@ -1,0 +1,21 @@
+blog_homepage:
+    path:     /
+    defaults: { _controller: BlogBundle:Home:index }
+
+blog_page:
+    path:    /page/{page}
+    defaults: { _controller: BlogBundle:Home:page}
+    requirements:
+        page: \d+
+
+# blog_article:
+#     path:     /article/{_locale}/{annee}/{slug}.{_format}
+#     defaults: { _controller:BlogBundle:Home:article, _format: html, _locale: fr }
+#     requirements:
+#         annee: \d{4}
+#         _format: rss|html
+#         _locale: fr|en
+
+blog_article:
+    path:     /article/{slug}
+    defaults: { _controller:BlogBundle:Home:article, _format: html, _locale: fr }

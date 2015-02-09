@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ article.titre }}</title>
+	</head>
+	<body>
+		<h1>{{ article.titre }}</h1>
+		<p>Publié le {{ article.date|date('d/m/Y') }} par {{ article.author }}</p>
+		<div class="content">{{ article.content }}</div>
+		token {{ article.token }}
+	</body>
+</html>
