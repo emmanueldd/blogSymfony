@@ -1,0 +1,15 @@
+{% extends('BlogBundle::layout_admin.html.twig') %}
+{% block title %}Index Admin | {{ parent() }}{% endblock %}
+{% block arianne %}{{ parent() }} > Index{% endblock %}
+{% block body %}
+    {{ parent() }}
+<div id="flash">
+    {% for flashMessage in app.session.flashbag.get('info') %}
+        <div class="flash-notice">
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
+
+</div>
+<a href="{{ path('blog_add_post') }}">Ajouter article</a>
+{% endblock %}

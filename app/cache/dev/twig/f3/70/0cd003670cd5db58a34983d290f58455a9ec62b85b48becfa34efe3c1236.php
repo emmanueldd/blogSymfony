@@ -13,6 +13,7 @@ class __TwigTemplate_f3700cd003670cd5db58a34983d290f58455a9ec62b85b48becfa34efe3
             'title' => array($this, 'block_title'),
             'stylesheets' => array($this, 'block_stylesheets'),
             'body' => array($this, 'block_body'),
+            'arianne' => array($this, 'block_arianne'),
             'javascripts' => array($this, 'block_javascripts'),
         );
     }
@@ -37,13 +38,16 @@ class __TwigTemplate_f3700cd003670cd5db58a34983d290f58455a9ec62b85b48becfa34efe3
         echo "\" />
     </head>
     <body>
+        <header>
+            <h1>MyCms</h1>
+        </header>
         ";
-        // line 10
+        // line 13
         $this->displayBlock('body', $context, $blocks);
-        // line 11
+        // line 19
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 12
+        // line 20
         echo "    </body>
 </html>
 ";
@@ -52,7 +56,7 @@ class __TwigTemplate_f3700cd003670cd5db58a34983d290f58455a9ec62b85b48becfa34efe3
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        echo "Welcome!";
+        echo "MyCms";
     }
 
     // line 6
@@ -60,12 +64,26 @@ class __TwigTemplate_f3700cd003670cd5db58a34983d290f58455a9ec62b85b48becfa34efe3
     {
     }
 
-    // line 10
+    // line 13
     public function block_body($context, array $blocks = array())
     {
+        // line 14
+        echo "                ";
+        $this->displayBlock('arianne', $context, $blocks);
+        // line 17
+        echo "
+        ";
     }
 
-    // line 11
+    // line 14
+    public function block_arianne($context, array $blocks = array())
+    {
+        // line 15
+        echo "                    Accueil
+                ";
+    }
+
+    // line 19
     public function block_javascripts($context, array $blocks = array())
     {
     }
@@ -82,6 +100,6 @@ class __TwigTemplate_f3700cd003670cd5db58a34983d290f58455a9ec62b85b48becfa34efe3
 
     public function getDebugInfo()
     {
-        return array (  69 => 11,  64 => 10,  59 => 6,  53 => 5,  47 => 12,  44 => 11,  42 => 10,  35 => 7,  33 => 6,  29 => 5,  23 => 1,);
+        return array (  87 => 19,  82 => 15,  79 => 14,  74 => 17,  71 => 14,  68 => 13,  63 => 6,  57 => 5,  51 => 20,  48 => 19,  46 => 13,  36 => 7,  34 => 6,  30 => 5,  24 => 1,);
     }
 }
