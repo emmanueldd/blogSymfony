@@ -84,6 +84,9 @@
   'BlogBundle:Home:article.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/src/Blog/BlogBundle/Resources/views/Home/article.html.twig',
   'BlogBundle:Home:index.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/src/Blog/BlogBundle/Resources/views/Home/index.html.twig',
   'BlogBundle:Home:page.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/src/Blog/BlogBundle/Resources/views/Home/page.html.twig',
+  'BlogBundle::layout_admin.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/src/Blog/BlogBundle/Resources/views/layout_admin.html.twig',
+  'BlogBundle:Post:add.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/src/Blog/BlogBundle/Resources/views/Post/add.html.twig',
+  'BlogBundle:Post:index.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/src/Blog/BlogBundle/Resources/views/Post/index.html.twig',
   'DebugBundle:Profiler:dump.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views/Profiler/dump.html.twig',
   'WebProfilerBundle:Collector:ajax.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/ajax.html.twig',
   'WebProfilerBundle:Collector:config.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/config.html.twig',
@@ -122,6 +125,7 @@
   'SensioDistributionBundle:Configurator/Step:doctrine.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views/Configurator/Step/doctrine.html.twig',
   'SensioDistributionBundle:Configurator/Step:secret.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views/Configurator/Step/secret.html.twig',
   'SensioDistributionBundle:Configurator:steps.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views/Configurator/steps.html.twig',
+  '::admin.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/app/Resources/views/admin.html.twig',
   '::base.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/app/Resources/views/base.html.twig',
   ':default:index.html.twig' => '/Users/freedom/Documents/symfony_projects/blog/app/Resources/views/default/index.html.twig',
 );

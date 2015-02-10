@@ -136,66 +136,31 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Blog\\BlogBundle\\Controller\\HomeController::indexAction',  '_route' => 'blog_homepage',);
         }
 
-        // blog_page
-        if (0 === strpos($pathinfo, '/page') && preg_match('#^/page/(?P<page>\\d+)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog_page')), array (  '_controller' => 'Blog\\BlogBundle\\Controller\\HomeController::pageAction',));
+        if (0 === strpos($pathinfo, '/p')) {
+            if (0 === strpos($pathinfo, '/post')) {
+                // blog_add_post
+                if ($pathinfo === '/post/add') {
+                    return array (  '_controller' => 'Blog\\BlogBundle\\Controller\\PostController::addAction',  '_route' => 'blog_add_post',);
+                }
+
+                // blog_posts
+                if ($pathinfo === '/posts') {
+                    return array (  '_controller' => 'Blog\\BlogBundle\\Controller\\PostController::indexAction',  '_route' => 'blog_posts',);
+                }
+
+            }
+
+            // blog_page
+            if (0 === strpos($pathinfo, '/page') && preg_match('#^/page/(?P<page>\\d+)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog_page')), array (  '_controller' => 'Blog\\BlogBundle\\Controller\\HomeController::pageAction',));
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/a')) {
             // blog_article
             if (0 === strpos($pathinfo, '/article') && preg_match('#^/article/(?P<slug>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog_article')), array (  '_controller' => 'Blog\\BlogBundle\\Controller\\HomeController::articleAction',  '_format' => 'html',  '_locale' => 'fr',));
-            }
-
-            if (0 === strpos($pathinfo, '/admin')) {
-                // blog_admin_home
-                if (rtrim($pathinfo, '/') === '/admin') {
-                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                        $allow = array_merge($allow, array('GET', 'HEAD'));
-                        goto not_blog_admin_home;
-                    }
-
-                    if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'blog_admin_home');
-                    }
-
-                    return array (  '_controller' => 'Blog\\BlogBundle\\Controller\\AdminController::indexAction',  '_route' => 'blog_admin_home',);
-                }
-                not_blog_admin_home:
-
-                // blog_add_post
-                if ($pathinfo === '/admin/add') {
-                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
-                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                        goto not_blog_add_post;
-                    }
-
-                    return array (  '_controller' => 'Blog\\BlogBundle\\Controller\\AdminArticleController::addAction',  '_route' => 'blog_add_post',);
-                }
-                not_blog_add_post:
-
-                // blog_edit_post
-                if (preg_match('#^/admin/(?P<id>\\d+)/edit$#s', $pathinfo, $matches)) {
-                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
-                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                        goto not_blog_edit_post;
-                    }
-
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog_edit_post')), array (  '_controller' => 'Blog\\BlogBundle\\Controller\\AdminArticleController::editAction',));
-                }
-                not_blog_edit_post:
-
-                // blog_delete_post
-                if (preg_match('#^/admin/(?P<id>\\d+)/delete$#s', $pathinfo, $matches)) {
-                    if ($this->context->getMethod() != 'DELETE') {
-                        $allow[] = 'DELETE';
-                        goto not_blog_delete_post;
-                    }
-
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog_delete_post')), array (  '_controller' => 'Blog\\BlogBundle\\Controller\\AdminArticleController::deleteAction',));
-                }
-                not_blog_delete_post:
-
             }
 
             // homepage

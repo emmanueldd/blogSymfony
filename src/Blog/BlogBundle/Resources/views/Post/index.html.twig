@@ -1,0 +1,22 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+    <h1>Tous les évenements</h1>
+    {%  for post in posts %}
+        <header>
+            <h2>{{ post.title }}</h2>
+
+        <header>
+        <div class="thumb"> <img src="{{ post.thumb }}" alt="thumb" width="500"></div>
+        <div class="content">
+
+            {{ post.content }}
+        </div>
+        <br>
+        <div class="desc">Posté par : {{ post.author }}, dans {{ post.categoryid }}</div>
+        <time>Le {{ post.createdat|date('d M Y') }}</time>
+    {% endfor %}
+    <form>
+
+
+    </form>
+{% endblock %}

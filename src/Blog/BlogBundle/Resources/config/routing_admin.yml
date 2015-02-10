@@ -1,28 +1,28 @@
-blog_admin_home:
-     path:     /
-     defaults: { _controller:BlogBundle:Admin:index }
-     requirements:
-         _method: GET
-
-
-blog_add_post:
-    path:   /add
-    defaults: { _controller:BlogBundle:AdminArticle:add }
-    requirements:
-        _method: GET|POST
-
-
-blog_edit_post:
-    path:   /{id}/edit
-    defaults: { _controller:BlogBundle:AdminArticle:edit }
-    requirements:
-        _method: GET|POST
-        id: \d+
-
-
-blog_delete_post:
-    path:   /{id}/delete
-    defaults: { _controller:BlogBundle:AdminArticle:delete}
-    requirements:
-        _method: DELETE
-        id: \d+
+#blog_admin_home:
+#     path:     /
+#     defaults: { _controller:BlogBundle:Admin:index }
+#     requirements:
+#         _method: GET
+#
+#
+#blog_add_post:
+#    path:   /add
+#    defaults: { _controller:BlogBundle:AdminArticle:add }
+#    requirements:
+#        _method: GET|POST
+#
+#
+#blog_edit_post:
+#    path:   /{id}/edit
+#    defaults: { _controller:BlogBundle:AdminArticle:edit }
+#    requirements:
+#        _method: GET|POST
+#        id: \d+
+#
+#
+#blog_delete_post:
+#    path:   /{id}/delete
+#    defaults: { _controller:BlogBundle:AdminArticle:delete}
+#    requirements:
+#        _method: DELETE
+#        id: \d+

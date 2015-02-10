@@ -14,4 +14,11 @@ class DefaultController extends Controller
     {
         return $this->render('default/index.html.twig');
     }
+
+    public function addAction()
+    {
+        return $this->render('BlogBlogBundle:Default:add.html.twig', array(
+
+        ));
+    }
 }
