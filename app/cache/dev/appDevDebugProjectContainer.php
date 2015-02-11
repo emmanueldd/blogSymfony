@@ -4162,9 +4162,9 @@ class appDevDebugProjectContainer extends Container
 
             ),
             'assetic.java.bin' => '/usr/bin/java',
-            'assetic.node.bin' => '/usr/bin/node',
-            'assetic.ruby.bin' => '/usr/bin/ruby',
-            'assetic.sass.bin' => '/usr/bin/sass',
+            'assetic.node.bin' => '/usr/local/bin/node',
+            'assetic.ruby.bin' => '/Users/freedom/.rvm/rubies/ruby-2.1.2/bin/ruby',
+            'assetic.sass.bin' => '/Users/freedom/.rvm/gems/ruby-2.1.2/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
             'assetic.twig_extension.functions' => array(
 
