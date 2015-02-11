@@ -3,18 +3,7 @@
     <a href="{{ path('blog_add_post') }}">Ajouter un évenement</a>
     <h1>Tous les évenements</h1>
     {%  for post in posts %}
-        <header>
-            <h2><a href="{{ path('blog_show_post', {id: post.id }) }}">{{ post.title }}</a></h2>
-
-        <header>
-        <div class="thumb"> <img src="{{ post.thumb }}" alt="thumb" width="500"></div>
-        <div class="content">
-
-            {{ post.content }}
-        </div>
-        <br>
-        <div class="desc">Posté par : {{ post.author }}, dans {{ post.categoryid }}</div>
-        <time>Le {{ post.createdat|date('d M Y') }}</time>
+        {% include 'BlogBundle:Post:post_content.html.twig' %}
     {% endfor %}
 
 {% endblock %}

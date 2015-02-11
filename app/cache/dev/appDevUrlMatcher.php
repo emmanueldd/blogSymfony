@@ -158,6 +158,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                     return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog_update_post')), array (  '_controller' => 'Blog\\BlogBundle\\Controller\\PostController::updateAction',));
                 }
 
+                // blog_delete_post
+                if (0 === strpos($pathinfo, '/post/delete') && preg_match('#^/post/delete/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog_delete_post')), array (  '_controller' => 'Blog\\BlogBundle\\Controller\\PostController::deleteAction',));
+                }
+
             }
 
             // blog_page

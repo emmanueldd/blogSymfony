@@ -21,6 +21,11 @@ blog_update_post:
     requirements:
         id: \d+
 
+blog_delete_post:
+    path:   /post/delete/{id}
+    defaults: { _controller: BlogBundle:Post:delete}
+    requirements:
+        id: \d+
 
 
 blog_page:

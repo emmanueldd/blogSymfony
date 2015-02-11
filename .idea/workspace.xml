@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5be546b1-e113-4463-af9d-7e83b0c18579" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f3/70/0cd003670cd5db58a34983d290f58455a9ec62b85b48becfa34efe3c1236.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f3/70/0cd003670cd5db58a34983d290f58455a9ec62b85b48becfa34efe3c1236.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/17/34/3150c9211ce37ae70b5b4b967a17b0d0bc360a55e81eb7fe343e01d9222c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/17/34/3150c9211ce37ae70b5b4b967a17b0d0bc360a55e81eb7fe343e01d9222c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/8d6239a7e63b427cca88d22e253a1d56029c9903$author.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/8d6239a7e63b427cca88d22e253a1d56029c9903$author.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/8d6239a7e63b427cca88d22e253a1d56029c9903$category_id.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/8d6239a7e63b427cca88d22e253a1d56029c9903$category_id.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/8d6239a7e63b427cca88d22e253a1d56029c9903$thumb.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/8d6239a7e63b427cca88d22e253a1d56029c9903$thumb.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/8d6239a7e63b427cca88d22e253a1d56029c9903$title.cache.php" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/8d6239a7e63b427cca88d22e253a1d56029c9903$title.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/bc/10/5b0bf597478138ebe00519a740456d6bf4c3557aaf3880c93496e5834d59.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/bc/10/5b0bf597478138ebe00519a740456d6bf4c3557aaf3880c93496e5834d59.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1d/7c/9b1a1ce82761bb6f068d9deb40acf2d1117d8ec6825ca2b585b8901c3e57.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/1d/7c/9b1a1ce82761bb6f068d9deb40acf2d1117d8ec6825ca2b585b8901c3e57.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blog/BlogBundle/Entity/Post.php" afterPath="$PROJECT_DIR$/src/Blog/BlogBundle/Entity/Post.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blog/BlogBundle/Controller/PostController.php" afterPath="$PROJECT_DIR$/src/Blog/BlogBundle/Controller/PostController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blog/BlogBundle/Form/PostType.php" afterPath="$PROJECT_DIR$/src/Blog/BlogBundle/Form/PostType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/add.html.twig" afterPath="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/add.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/index.html.twig" afterPath="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/show.html.twig" afterPath="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blog.iws" />
@@ -49,8 +40,8 @@
       <file leaf-file-name="PostController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Controller/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20655738" vertical-offset="1414" max-vertical-offset="2200">
-              <caret line="70" column="55" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.6352584" vertical-offset="1650" max-vertical-offset="2398">
+              <caret line="94" column="21" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
               <folding>
                 <element signature="e#46#103#0#PHP" expanded="true" />
               </folding>
@@ -58,11 +49,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="post_content.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/post_content.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="285">
+              <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="375">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -71,8 +72,9 @@
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="795">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -81,8 +83,8 @@
       <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="360">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="180">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -123,19 +125,19 @@
         <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Form/PostType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Entity/Post.php" />
-        <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/add.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/post_content.html.twig" />
         <option value="$PROJECT_DIR$/src/Blog/BlogBundle/Controller/PostController.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -577,6 +579,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -625,7 +628,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -868,22 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="360">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/add.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="225">
@@ -892,18 +879,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="180">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="375">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="795">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Resources/views/Post/post_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="285">
+          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/BlogBundle/Controller/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20655738" vertical-offset="1414" max-vertical-offset="2200">
-          <caret line="70" column="55" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.6352584" vertical-offset="1650" max-vertical-offset="2398">
+          <caret line="94" column="21" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
           <folding>
             <element signature="e#46#103#0#PHP" expanded="true" />
           </folding>

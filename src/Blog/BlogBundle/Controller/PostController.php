@@ -88,6 +88,15 @@ class PostController extends Controller
         ));
     }
 
+    public function deleteAction(POST $post, Request $request)
+    {
+        $em = $this->getDoctrine()->getEntityManager();
+        $em->remove($post);
+        $em->flush();
+
+        return $this->redirect($this->generateUrl('blog_posts'));
+    }
+
 
 
 }
