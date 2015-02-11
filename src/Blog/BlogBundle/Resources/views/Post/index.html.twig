@@ -1,9 +1,10 @@
 {% extends "::base.html.twig" %}
 {% block body %}
+    <a href="{{ path('blog_add_post') }}">Ajouter un évenement</a>
     <h1>Tous les évenements</h1>
     {%  for post in posts %}
         <header>
-            <h2>{{ post.title }}</h2>
+            <h2><a href="{{ path('blog_show_post', {id: post.id }) }}">{{ post.title }}</a></h2>
 
         <header>
         <div class="thumb"> <img src="{{ post.thumb }}" alt="thumb" width="500"></div>
@@ -15,8 +16,5 @@
         <div class="desc">Posté par : {{ post.author }}, dans {{ post.categoryid }}</div>
         <time>Le {{ post.createdat|date('d M Y') }}</time>
     {% endfor %}
-    <form>
 
-
-    </form>
 {% endblock %}

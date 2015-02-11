@@ -10,6 +10,16 @@ blog_posts:
     path:   /posts
     defaults: { _controller: BlogBundle:Post:index}
 
+blog_show_post:
+    path:   /post/{id}
+    defaults: { _controller: BlogBundle:Post:show}
+    requirements:
+        id: \d+
+blog_update_post:
+    path:   /post/update/{id}
+    defaults: { _controller: BlogBundle:Post:update}
+    requirements:
+        id: \d+
 
 
 

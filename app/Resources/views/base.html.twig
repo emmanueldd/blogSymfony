@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}MyCms{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <style>{% block stylesheets %}
+            label {
+                display: block;
+            }{% endblock %}</style>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>

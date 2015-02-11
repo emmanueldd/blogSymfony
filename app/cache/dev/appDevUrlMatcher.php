@@ -148,6 +148,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                     return array (  '_controller' => 'Blog\\BlogBundle\\Controller\\PostController::indexAction',  '_route' => 'blog_posts',);
                 }
 
+                // blog_show_post
+                if (preg_match('#^/post/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog_show_post')), array (  '_controller' => 'Blog\\BlogBundle\\Controller\\PostController::showAction',));
+                }
+
+                // blog_update_post
+                if (0 === strpos($pathinfo, '/post/update') && preg_match('#^/post/update/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog_update_post')), array (  '_controller' => 'Blog\\BlogBundle\\Controller\\PostController::updateAction',));
+                }
+
             }
 
             // blog_page

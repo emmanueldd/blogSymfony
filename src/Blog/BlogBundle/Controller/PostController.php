@@ -7,6 +7,7 @@ use Blog\BlogBundle\Entity\Post;
 use Symfony\Component\Validator\Constraints\Date;
 use Blog\BlogBundle\Form\PostType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class PostController extends Controller
 {
@@ -17,6 +18,11 @@ class PostController extends Controller
         return $this->render('BlogBundle:Post:index.html.twig', array(
             'posts' => $posts
         ));
+    }
+
+    public function showAction(POST $post){
+        return $this->render('BlogBundle:Post:show.html.twig', array('post' => $post));
+
     }
 
     public function addAction(Request $request)
@@ -38,22 +44,49 @@ class PostController extends Controller
         if ($request->isMethod('POST'))
         {
             $form->submit($request);
-            $p = $form->getData();
-            $em->persist($p);
-            $em->flush();
-            $this->addFlash('info', 'l article a bien été ajouté');
-            return $this->redirect($this->generateUrl('blog_posts'));
+            if ($form->isValid()){
+                $p = $form->getData();
+                $em->persist($p);
+                // On dégage de la mémoire
+                $em->flush();
+                $this->addFlash('info', 'l article a bien été ajouté');
+                return $this->redirect($this->generateUrl('blog_show_post', array('id' => $p->getId(),)));
+            }
+
         }
-        else {
-            return $this->render('BlogBundle:Post:add.html.twig', array(
+
+        return $this->render('BlogBundle:Post:add.html.twig', array(
                 'form' => $form->createView(),
-            ));
-        }
+                'action' => 'Ajouter ',
+        ));
 
 
 
     }
 
+    public function updateAction(POST $post, Request $request)
+    {
+        $em = $this->getDoctrine()->getEntityManager();
+
+        $form = $this->createForm(new PostType(), $post);
+        if ($request->isMethod('POST'))
+        {
+            $form->submit($request);
+            if ($form->isValid()){
+                $p = $form->getData();
+                $em->persist($p);
+                // On dégage de la mémoire
+                $em->flush();
+                $this->addFlash('info', 'l article a bien été ajouté');
+                return $this->redirect($this->generateUrl('blog_show_post', array('id' => $p->getId(),)));
+            }
+
+        }
+        return $this->render('BlogBundle:Post:add.html.twig', array(
+            'form' => $form->createView(),
+            'action' => 'Editer '
+        ));
+    }
 
 
 

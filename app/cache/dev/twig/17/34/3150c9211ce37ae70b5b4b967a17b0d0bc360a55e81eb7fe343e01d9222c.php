@@ -36,7 +36,9 @@ class __TwigTemplate_17343150c9211ce37ae70b5b4b967a17b0d0bc360a55e81eb7fe343e01d
     public function block_body($context, array $blocks = array())
     {
         // line 3
-        echo "<h1>Ajouter un post</h1>
+        echo "<h1>";
+        echo twig_escape_filter($this->env, (isset($context["action"]) ? $context["action"] : $this->getContext($context, "action")), "html", null, true);
+        echo " un post</h1>
 
 <form action=\"";
         // line 5
@@ -64,6 +66,6 @@ class __TwigTemplate_17343150c9211ce37ae70b5b4b967a17b0d0bc360a55e81eb7fe343e01d
 
     public function getDebugInfo()
     {
-        return array (  48 => 7,  43 => 5,  39 => 3,  36 => 2,  11 => 1,);
+        return array (  50 => 7,  45 => 5,  39 => 3,  36 => 2,  11 => 1,);
     }
 }

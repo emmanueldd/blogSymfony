@@ -3,6 +3,7 @@
 namespace Blog\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Post
@@ -25,6 +26,7 @@ class Post
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $title;
 
@@ -39,6 +41,7 @@ class Post
      * @var string
      *
      * @ORM\Column(name="thumb", type="string", length=255, nullable=true)
+     * @Assert\Url()
      */
     private $thumb;
 
@@ -46,6 +49,7 @@ class Post
      * @var string
      *
      * @ORM\Column(name="author", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $author;
 
@@ -53,6 +57,8 @@ class Post
      * @var integer
      *
      * @ORM\Column(name="category_id", type="integer")
+     * @Assert\Type(type="integer", message="La valeur {{ value }} n'est pas un type {{ type }} valide.")
+     * @Assert\NotNull()
      */
     private $category_id;
 
