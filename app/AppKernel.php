@@ -21,7 +21,7 @@ class AppKernel extends Kernel
 
 
 
-//            new FOS\UserBundle\FOSUserBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
             new Blog\UserBundle\UserBundle(),
         );
 

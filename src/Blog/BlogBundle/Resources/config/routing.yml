@@ -45,3 +45,5 @@ blog_page:
 blog_article:
     path:     /article/{slug}
     defaults: { _controller:BlogBundle:Home:article, _format: html, _locale: fr }
+
+

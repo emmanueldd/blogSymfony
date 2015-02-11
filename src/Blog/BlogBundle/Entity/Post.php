@@ -10,9 +10,15 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="Blog\BlogBundle\Entity\PostRepository")
+ *
  */
 class Post
 {
+    /**
+     * @ORM\ManyToOne(targetEntity="Blog\BlogBundle\Entity\UserRepository")
+     * @ORM\JoinColumn(nullable=false)
+     */
+
     /**
      * @var integer
      *
